@@ -4,14 +4,14 @@ function Navbar() {
     const [ isOpen, setIsOpen ] = useState(false);
     return (
         <>
-      
-        <header className="bg-white shadow">
+        <header className="bg-white shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="text-4xl font-bold text-green-600">JobEntry</div>
                 <div className='flex gap-2'>
                     <nav className="hidden md:flex space-x-4 items-center mx-2">
                         <a href="#" className="text-gray-800 hover:text-green-600">HOME</a>
-                        <a href="#" className="text-green-600">ABOUT</a>
+                        <a href="#" className="text-gray-800 hover:text-green-600">About</a>
+                        {/* <a href="#" className="text-green-600">ABOUT</a> */}
                         <div className="relative group">
                             <a href="#" className="text-gray-800 hover:text-green-600 flex items-center">
                                 JOBS <i className="fas fa-chevron-down ml-1"></i>
@@ -44,7 +44,7 @@ function Navbar() {
             {isOpen && (
                 <div className="md:hidden border-b border-gray-200 dropDown">
                     <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">HOME</a>
-                    <a href="#" className="block px-4 py-2 text-green-600">ABOUT</a>
+                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</a>
                     <div className="relative group">
                         <a href="#" className=" px-4 py-2 text-gray-800 hover:bg-gray-100 flex items-center">
                             JOBS <i className="fas fa-chevron-down ml-1"></i>
