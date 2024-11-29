@@ -5,6 +5,9 @@
 .dropDown{
     animation: myAnim 2s ease 0s 1 alternate forwards;
 }
+footer{
+	background-color: #2B3940;
+}
 @keyframes myAnim {
 	0% {
 		opacity: 0;

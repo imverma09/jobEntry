@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [ isOpen, setIsOpen ] = useState(false);
@@ -9,15 +10,15 @@ function Navbar() {
                 <div className="text-4xl font-bold text-green-600">JobEntry</div>
                 <div className='flex gap-2'>
                     <nav className="hidden md:flex space-x-4 items-center mx-2">
-                        <a href="#" className="text-gray-800 hover:text-green-600">HOME</a>
-                        <a href="#" className="text-gray-800 hover:text-green-600">About</a>
+                        <Link to={'/'} className="text-gray-800 hover:text-green-600">HOME</Link>
+                        <Link to={'/about'} className="text-gray-800 hover:text-green-600">ABOUT</Link>
                         {/* <a href="#" className="text-green-600">ABOUT</a> */}
                         <div className="relative group">
                             <a href="#" className="text-gray-800 hover:text-green-600 flex items-center">
                                 JOBS <i className="fas fa-chevron-down ml-1"></i>
                             </a>
                             <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block">
-                                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Job 1</a>
+                                <Link to={'/jobDetail'} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Job Detail</Link>
                                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Job 2</a>
                             </div>
                         </div>
