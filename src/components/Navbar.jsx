@@ -17,16 +17,16 @@ function Navbar() {
                             <a href="#" className="text-gray-800 hover:text-green-600 flex items-center">
                                 JOBS <i className="fas fa-chevron-down ml-1"></i>
                             </a>
-                            <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block">
+                            <div className="absolute z-50 left-0 mt-1 w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block">
                                 <Link to={'/jobDetail'} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Job Detail</Link>
-                                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Job 2</a>
+                                <Link to={'/jobList'} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">job List</Link>
                             </div>
                         </div>
                         <div className="relative group">
                             <a href="#" className="text-gray-800 hover:text-green-600 flex items-center">
                                 PAGES <i className="fas fa-chevron-down ml-1"></i>
                             </a>
-                            <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block">
+                            <div className="absolute z-50 left-0 mt-1    w-48 bg-white border border-gray-200 shadow-lg hidden group-hover:block">
                                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Page 1</a>
                                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Page 2</a>
                             </div>

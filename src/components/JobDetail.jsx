@@ -6,6 +6,17 @@ function JobDetail() {
     return (
         <>
         <Navbar/>
+        <div className="relative">
+                <img src="carousel-1.jpg" alt="Two women discussing something on a tablet" className="w-full h-[50vh] object-cover" />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-8">
+                    <div className="border-l-4 border-green-500 pl-4">
+                        <h1 className="text-white text-4xl font-bold">Job Detail</h1>
+                    </div>
+                    <div className="mt-2 text-green-500">
+                        <a href="#" className="hover:underline">HOME</a> / <a href="#" className="hover:underline">PAGES</a> / <span>JOB DETAIL</span>
+                    </div>
+                </div>
+            </div> 
             <div className="flex bg-gray-100 p-5 h-fit flex-wrap ">
                 <div className="w-full bg-white rounded-lg shadow-md md:flex-row h-fit">
                     <div className="flex flex-col p-4 md:flex-row ">
@@ -45,11 +56,6 @@ function JobDetail() {
                                 <li className="mb-2"><i className="fas fa-chevron-right mr-2 text-green-500"></i>Location: New York, USA</li>
                                 <li className="mb-2"><i className="fas fa-chevron-right mr-2 text-green-500"></i>Date Line: 01 Jan, 2045</li>
                             </ul>
-                            <div className='mt-[10%]'>
-                                <a href="#" className=" md:flex bg-green-600 text-white px-4 py-2 rounded items-center">
-                                    Apply Now <i className="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>

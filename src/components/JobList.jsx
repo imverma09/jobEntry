@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom';
 function JobList() {
-
+   const navigate = useNavigate()
     const [filter, setFilter] = useState('Featured');
     const [jobs, setJobs] = useState([
       
@@ -72,10 +72,16 @@ function JobList() {
             like : false,
         }
     ]);
-   const likeHandel = (e)=>{
+   const likeHandle = (e)=>{
     const id =  e.target.id
     setJobs(jobs.map(job => job.id == id ? {...job ,like : !job.like  } : job))
     console.log(jobs)
+   }
+   function applyHandle(e){
+      const id =  Number(e.target.getAttribute('name'))
+      if(id){
+        navigate('/jobDetail')
+      }
    }
     const filteredJobs = filter === 'Featured' ? jobs : jobs.filter(job => job.type === filter);
     return (
@@ -113,8 +119,8 @@ function JobList() {
                         </div>
                     </div>
                     <div className="text-right ">
-                    <i id={job.id} onClick={likeHandel} className={`fas fa-heart mr-2 cursor-pointer ${job.like &&'text-red-600'}`}></i>
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center">
+                    <i id={job.id} onClick={likeHandle} className={`fas fa-heart mr-2 cursor-pointer ${job.like &&'text-red-600'}`}></i>
+                        <button name={job.id} onClick={applyHandle} className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center">
                              Apply Now
                         </button>
                         <div className="text-gray-500 mt-2"><i className="fas fa-calendar-alt"></i> Date Line: {job.deadline}</div>

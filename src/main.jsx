@@ -4,7 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import JobDetail from './components/JobDetail.jsx'
-import About from './components/About.jsx'
+import AboutSection from './components/AboutSection.jsx'
+import JobListSection from './components/JobListSection.jsx'
 // import <About
 const router = createBrowserRouter([
   {
@@ -13,12 +14,16 @@ const router = createBrowserRouter([
   },
   {
     path: '/about',
-    element: <About />
+    element: <AboutSection />
   },
   {
     path: '/jobDetail',
     element: <JobDetail />
+  },{
+    path : "/jobList",
+    element : <JobListSection/>
   }
+  
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
