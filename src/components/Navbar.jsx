@@ -7,7 +7,7 @@ function Navbar() {
         <>
         <header className="bg-white shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <div className="text-4xl font-bold text-green-600">JobEntry</div>
+                <Link to={"/"} className="text-4xl font-bold text-green-600">JobEntry</Link>
                 <div className='flex gap-2'>
                     <nav className="hidden md:flex space-x-4 items-center mx-2">
                         <Link to={'/'} className="text-gray-800 hover:text-green-600">HOME</Link>

@@ -14,7 +14,7 @@ function JobListSection() {
                         <h1 className="text-white text-4xl font-bold">ABOUT</h1>
                     </div>
                     <div className="mt-2 text-green-500">
-                        <a href="#" className="hover:underline">HOME</a> / <a href="#" className="hover:underline">ABOUT</a>
+                        <a href="#" className="hover:underline">HOME</a> / <a href="#" className="hover:underline">JOB LIST </a>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Category from './components/Category'
 import About from './components/About'
 import JobList from './components/JobList'
 import Footer from './components/Footer'
+import Abc from './components/Swiper'
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
     <Category/>
     <About/>
     <JobList/>
+    <Abc/>
     <Footer/>
     </>
   )
