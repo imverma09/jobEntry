@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import JobDetail from './components/JobDetail.jsx'
 import AboutSection from './components/AboutSection.jsx'
 import JobListSection from './components/JobListSection.jsx'
-import Abc from './components/Swiper.jsx'
+import Contact from './components/Contact.jsx'
 // import <About
 const router = createBrowserRouter([
   {
@@ -23,7 +23,10 @@ const router = createBrowserRouter([
   },{
     path : "/jobList",
     element : <JobListSection/>
-  } 
+  } ,{
+    path : "/contact",
+    element : <Contact/>
+  }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

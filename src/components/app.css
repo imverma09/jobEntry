@@ -1,0 +1,179 @@
+  
+
+  .carousel-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    display: block;
+    opacity: .8;
+  }
+  
+  .carousel-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .carousel-sm {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    /* color: white; */
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .btn1{
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    font-size: 20px;
+    background-color: rgb(113, 113, 172);
+    padding: 20px 20px 20px 20px;
+    color: white;
+    
+  }
+
+  .btn2{
+    position: absolute;
+    font-size: 20px;
+    top: 70%;
+    left: 20%;
+    background-color: rgb(118, 194, 118);
+    padding: 20px 20px 20px 20px;
+    /* opacity: 0.5; */
+   
+    color: white;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 50%;
+  }
+  
+  .prev {
+    left: 75%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    width: 80px;
+    height: 50px;
+  }
+  
+  .next {
+    right: 20%;
+    background-color: black;
+    color: white;
+    top: 400px;
+    font-size: 30px;
+
+    width: 80px;
+    height: 50px;
+  }
+  .main-contact{
+    display: flex;
+    gap: 40px;
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+
+  .main h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 37%;
+  }
+  .icon{
+    width: 40px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid black;
+  }
+  .contact{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(86, 51, 86, 0.07);
+    width: 25%;
+    height: 85px;
+    padding-left:40px ;
+    padding-top: 25px;
+  }
+  .formdata{
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .download{
+    color: green;
+  }
+  .map{
+    width: 50%;
+    height: 450px;
+    background-color: rgb(16, 109, 190);
+    border: 1px solid black;
+  }
+  .map img{
+    height: 450px;
+  }
+
+  .formtext h1{
+    width: 70%;
+  }
+ 
+  
+  .forminput input{
+    margin-top: 5%;
+    /* background-color: aqua; */
+    border: 1px solid black;
+    width: 32%;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 20px;
+
+  }
+  .input2{
+    margin-left: 2%;
+  }
+  .subject{
+    border: 1px solid black;
+    width: 66%;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+
+  }
+  .message{
+    margin-top:40px ;
+    border: 1px solid black;
+    width: 66%;
+    height: 90px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .btn22{
+    margin-top: 19%;
+    width: 39%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+  }

@@ -22,7 +22,7 @@ function Navbar() {
                                 <Link to={'/jobList'} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">job List</Link>
                             </div>
                         </div>
-                        <div className="relative group">
+                        {/* <div className="relative group">
                             <a href="#" className="text-gray-800 hover:text-green-600 flex items-center">
                                 PAGES <i className="fas fa-chevron-down ml-1"></i>
                             </a>
@@ -30,8 +30,8 @@ function Navbar() {
                                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Page 1</a>
                                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Page 2</a>
                             </div>
-                        </div>
-                        <a href="#" className="text-gray-800 hover:text-green-600">CONTACT</a>
+                        </div> */}
+                        <Link to={'/contact'} href="#" className="text-gray-800 hover:text-green-600">CONTACT</Link>
                     </nav>
                     <a href="#" className="hidden md:flex bg-green-600 text-white px-4 py-2 rounded items-center">
                         Post A Job <i className="fas fa-arrow-right ml-2"></i>
